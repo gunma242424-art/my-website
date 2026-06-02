@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>장례식장 예절 안내 | 조문 순서, 복장, 위로 인사말</title>
+  <meta name="description" content="장례식장 예절을 처음 접하는 분들을 위해 복장, 조문 순서, 절하는 방법, 위로 인사말, 종교별 예절을 차분하게 안내하는 페이지입니다." />
+  <style>
+    :root {
+      --bg: #f6f2eb;
+      --surface: #fffdf9;
+      --surface-2: #f0ebe3;
+      --text: #1f2a26;
+      --muted: #5b675f;
+      --line: #d8d1c6;
+      --primary: #234238;
+      --primary-2: #35584c;
+      --accent: #b89d6a;
+      --danger: #8d4c4c;
+      --shadow: 0 18px 40px rgba(35, 66, 56, 0.08);
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(184, 157, 106, 0.10), transparent 22%),
+        linear-gradient(180deg, #f8f5f0 0%, #f3eee6 100%);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(248, 245, 240, 0.82);
+      border-bottom: 1px solid rgba(216, 209, 198, 0.8);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 76px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      color: #fff;
+      font-size: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .nav-links a:hover { color: var(--primary); }
+
+    .nav-cta {
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 600;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 72px 0 36px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-card,
+    .info-panel,
+    .card,
+    .faq-item,
+    .cta-box {
+      background: rgba(255, 253, 249, 0.88);
+      border: 1px solid rgba(216, 209, 198, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      padding: 48px;
+      border-radius: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(184, 157, 106, 0.16), transparent 68%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(35, 66, 56, 0.08);
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3, h4, p { margin: 0; }
+    h1 {
+      font-size: clamp(34px, 4vw, 56px);
+      line-height: 1.18;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .hero-sub {
+      color: var(--muted);
+      font-size: clamp(16px, 1.8vw, 19px);
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: transform .2s ease, background .2s ease, color .2s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-secondary { background: transparent; color: var(--primary); border: 1px solid var(--line); }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .mini-point {
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: var(--surface-2);
+      border: 1px solid rgba(216, 209, 198, 0.75);
+    }
+
+    .mini-point strong {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .mini-point span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .info-panel {
+      border-radius: 32px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      background: linear-gradient(180deg, rgba(35,66,56,0.98), rgba(48,82,70,0.98));
+      color: #f8f5f0;
+    }
+
+    .info-panel .panel-label {
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.72);
+    }
+
+    .info-panel h3 {
+      font-size: 28px;
+      line-height: 1.25;
+      letter-spacing: -0.03em;
+    }
+
+    .info-panel p {
+      color: rgba(255,255,255,0.82);
+      font-size: 15px;
+    }
+
+    .panel-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .panel-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .panel-item .num {
+      flex: 0 0 28px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.16);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 36px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(28px, 3vw, 40px);
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      max-width: 720px;
+    }
+
+    .grid-3,
+    .grid-4 {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .card {
+      border-radius: 24px;
+      padding: 24px;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(35, 66, 56, 0.08);
+      color: var(--primary);
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--surface-2);
+      color: var(--primary);
+      border: 1px solid rgba(216, 209, 198, 0.8);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .timeline-card {
+      position: relative;
+      padding: 26px 22px 22px;
+      border-radius: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      min-height: 240px;
+    }
+
+    .timeline-card::before {
+      content: "";
+      position: absolute;
+      top: 26px;
+      left: 22px;
+      width: 34px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .timeline-card .step {
+      display: inline-block;
+      margin-top: 14px;
+      margin-bottom: 12px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(35,66,56,0.07);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .timeline-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .timeline-card ul,
+    .check-list,
+    .phrase-list,
+    .faq-answer ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .timeline-card li,
+    .check-list li,
+    .phrase-list li,
+    .faq-answer li {
+      margin-bottom: 8px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 18px;
+    }
+
+    .notice {
+      padding: 22px 24px;
+      border-radius: 20px;
+      background: rgba(141, 76, 76, 0.06);
+      border: 1px solid rgba(141, 76, 76, 0.16);
+    }
+
+    .notice h3 { margin-bottom: 12px; }
+    .notice p, .notice li { color: #6b4c4c; }
+
+    .good-box {
+      padding: 22px 24px;
+      border-radius: 20px;
+      background: rgba(35, 66, 56, 0.06);
+      border: 1px solid rgba(35, 66, 56, 0.15);
+    }
+
+    .good-box h3 { margin-bottom: 12px; }
+    .good-box p, .good-box li { color: var(--muted); }
+
+    .compare {
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      background: var(--surface);
+    }
+
+    .compare table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    .compare thead th {
+      background: var(--primary);
+      color: #fff;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 16px 18px;
+    }
+
+    .compare td {
+      padding: 18px;
+      border-top: 1px solid var(--line);
+      vertical-align: top;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .compare td strong { color: var(--text); }
+
+    .phrase-wrap {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .quote {
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .quote .label {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .quote blockquote {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+    }
+
+    .quote p { color: var(--muted); font-size: 15px; }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      padding: 20px 22px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .faq-question span:last-child {
+      color: var(--primary);
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .faq-answer {
+      padding: 0 22px 22px;
+      color: var(--muted);
+      display: none;
+    }
+
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-question { padding-bottom: 12px; }
+
+    .cta-box {
+      border-radius: 32px;
+      padding: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      background: linear-gradient(135deg, rgba(35,66,56,0.98), rgba(63,96,84,0.98));
+      color: #fff;
+    }
+
+    .cta-box h2 {
+      font-size: clamp(28px, 3vw, 42px);
+      margin-bottom: 10px;
+      letter-spacing: -0.03em;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.82);
+      max-width: 680px;
+    }
+
+    .cta-box .btn-secondary {
+      border-color: rgba(255,255,255,0.22);
+      color: #fff;
+    }
+
+    footer {
+      padding: 28px 0 56px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-line {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(216, 209, 198, 0.8);
+    }
+
+    @media (max-width: 1080px) {
+      .hero-grid,
+      .split,
+      .timeline,
+      .grid-4,
+      .grid-3,
+      .phrase-wrap {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .cta-box { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (max-width: 760px) {
+      .nav { min-height: 68px; }
+      .nav-links { display: none; }
+      .hero { padding-top: 36px; }
+      .hero-card, .info-panel, .card, .cta-box { padding: 22px; }
+      .hero-grid,
+      .split,
+      .timeline,
+      .grid-4,
+      .grid-3,
+      .phrase-wrap,
+      .hero-points {
+        grid-template-columns: 1fr;
+      }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      .compare { overflow-x: auto; }
+      .faq-question { font-size: 16px; }
+      h1 { font-size: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="홈으로 이동">
+        <span class="brand-mark">✤</span>
+        <span>장례식장 예절 안내</span>
+      </a>
+      <nav class="nav-links" aria-label="주요 메뉴">
+        <a href="#essentials">핵심 예절</a>
+        <a href="#process">조문 순서</a>
+        <a href="#religion">종교별 예절</a>
+        <a href="#phrases">위로 인사말</a>
+        <a href="#faq">자주 묻는 질문</a>
+      </nav>
+      <a class="nav-cta" href="#process">바로 보기</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <div class="eyebrow">차분하고 쉬운 장례식장 방문 가이드</div>
+          <h1>장례식장 예절,<br />처음이어도 괜찮습니다</h1>
+          <p class="hero-sub">
+            복장부터 조문 순서, 절하는 방법, 위로 인사말, 종교별 예절까지.
+            갑작스러운 상황에서도 당황하지 않도록 꼭 필요한 내용을 한 페이지에 정리했습니다.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#process">조문 순서 보기</a>
+            <a class="btn btn-secondary" href="#essentials">핵심 예절 확인</a>
+          </div>
+          <div class="hero-points">
+            <div class="mini-point">
+              <strong>복장 예절</strong>
+              <span>검은색 또는 어두운 단정한 복장 중심</span>
+            </div>
+            <div class="mini-point">
+              <strong>조문 순서</strong>
+              <span>분향·헌화 후 절 또는 묵념, 상주 인사</span>
+            </div>
+            <div class="mini-point">
+              <strong>위로 인사말</strong>
+              <span>짧고 진심 어린 말이 가장 중요합니다</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="info-panel" aria-label="빠른 안내">
+          <div class="panel-label">Quick Guide</div>
+          <h3>처음 방문할 때<br />가장 많이 찾는 정보</h3>
+          <p>장례식장 예절에서 가장 자주 확인하는 항목만 빠르게 추려서 안내합니다.</p>
+          <div class="panel-list">
+            <div class="panel-item">
+              <div class="num">1</div>
+              <div>
+                <strong>복장</strong>
+                <p>화려한 색상과 진한 향수는 피하고, 차분한 옷차림을 유지합니다.</p>
+              </div>
+            </div>
+            <div class="panel-item">
+              <div class="num">2</div>
+              <div>
+                <strong>행동</strong>
+                <p>큰 소리로 대화하지 않고, 휴대전화는 무음 또는 진동으로 전환합니다.</p>
+              </div>
+            </div>
+            <div class="panel-item">
+              <div class="num">3</div>
+              <div>
+                <strong>인사</strong>
+                <p>사망 경위를 자세히 묻기보다 짧고 정중한 위로를 전합니다.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="essentials">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>가장 많이 찾는 핵심 예절</h2>
+            <p>처음 조문을 가는 분들이 가장 먼저 확인하는 내용을 카드 형태로 정리했습니다.</p>
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <article class="card">
+            <div class="icon">◼</div>
+            <h3>복장 예절</h3>
+            <p>검은색 또는 어두운 계열의 단정한 복장을 권장하며, 화려한 장신구와 강한 향수는 피합니다.</p>
+            <div class="tag-list">
+              <span class="tag">어두운 색상</span>
+              <span class="tag">단정한 실루엣</span>
+              <span class="tag">과한 꾸밈 자제</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="icon">☷</div>
+            <h3>조문 순서</h3>
+            <p>빈소 확인 후 분향 또는 헌화, 절 또는 묵념, 상주 인사의 흐름으로 차분하게 진행합니다.</p>
+            <div class="tag-list">
+              <span class="tag">분향·헌화</span>
+              <span class="tag">절·묵념</span>
+              <span class="tag">상주 인사</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="icon">✤</div>
+            <h3>절하는 방법</h3>
+            <p>전통 장례에서는 고인께 두 번 절하고, 상주와는 맞절 또는 가벼운 반절로 인사합니다.</p>
+            <div class="tag-list">
+              <span class="tag">고인께 2배</span>
+              <span class="tag">상주와 맞절</span>
+              <span class="tag">종교식은 묵념 가능</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="icon">✉</div>
+            <h3>위로 인사말</h3>
+            <p>긴 설명보다 짧고 진심 어린 위로가 중요합니다. 사망 경위를 자세히 묻는 말은 삼갑니다.</p>
+            <div class="tag-list">
+              <span class="tag">짧고 정중하게</span>
+              <span class="tag">사망 경위 질문 자제</span>
+              <span class="tag">진심 중심</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>장례식장 조문 순서</h2>
+            <p>장례식장에 도착한 뒤부터 조용히 자리를 물러날 때까지의 흐름을 단계별로 안내합니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-card">
+            <span class="step">Step 01</span>
+            <h3>빈소 확인</h3>
+            <ul>
+              <li>장례식장 안내판에서 빈소 위치를 확인합니다.</li>
+              <li>코트나 큰 짐은 미리 정리하고 입장합니다.</li>
+              <li>휴대전화는 무음 또는 진동으로 전환합니다.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card">
+            <span class="step">Step 02</span>
+            <h3>분향 또는 헌화</h3>
+            <ul>
+              <li>영정 앞에서 분향 또는 헌화를 합니다.</li>
+              <li>종교식 여부에 따라 분향 대신 헌화를 할 수 있습니다.</li>
+              <li>동작은 급하지 않게 차분하게 진행합니다.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card">
+            <span class="step">Step 03</span>
+            <h3>절 또는 묵념</h3>
+            <ul>
+              <li>전통 장례에서는 고인께 두 번 절합니다.</li>
+              <li>기독교식 등에서는 절 대신 묵념으로 예를 표할 수 있습니다.</li>
+              <li>장례 형식이 헷갈리면 안내를 따르는 것이 좋습니다.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card">
+            <span class="step">Step 04</span>
+            <h3>상주 인사</h3>
+            <ul>
+              <li>상주와 맞절 또는 가벼운 반절로 인사합니다.</li>
+              <li>짧은 위로의 말을 전합니다.</li>
+              <li>오랜 대화보다 조용하고 간결한 태도가 예의입니다.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dress">
+      <div class="container split">
+        <div class="good-box card">
+          <h3>이렇게 준비하면 좋습니다</h3>
+          <ul class="check-list">
+            <li>검은색, 진회색, 남색 등 차분한 색의 옷을 선택합니다.</li>
+            <li>구두나 단정한 신발을 착용합니다.</li>
+            <li>말수와 행동을 절제하고 조용한 태도를 유지합니다.</li>
+            <li>부의금은 깨끗한 봉투에 담아 정중히 전달합니다.</li>
+            <li>위로 인사말은 짧고 담담하게 전합니다.</li>
+          </ul>
+        </div>
+
+        <div class="notice card">
+          <h3>이런 행동은 삼가주세요</h3>
+          <ul class="check-list">
+            <li>화려한 색상, 반짝이는 액세서리, 진한 화장</li>
+            <li>강한 향수 사용이나 지나치게 캐주얼한 복장</li>
+            <li>큰 소리 대화, 웃음, 장시간 통화</li>
+            <li>상주에게 사망 경위를 자세히 묻는 말</li>
+            <li>지나치게 밝거나 가벼운 분위기의 인사말</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="religion">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>종교별 예절 한눈에 보기</h2>
+            <p>장례 형식에 따라 절, 분향, 헌화 방식이 달라질 수 있으므로 기본 차이를 미리 알고 가면 좋습니다.</p>
+          </div>
+        </div>
+
+        <div class="compare" role="region" aria-label="종교별 예절 비교표">
+          <table>
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>기본 방식</th>
+                <th>권장 행동</th>
+                <th>유의사항</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>불교식</strong></td>
+                <td>향을 피우고 합장 후 반배 또는 큰절</td>
+                <td>염불 중에는 조용히 합장하며 예를 갖춥니다.</td>
+                <td>향 불꽃을 입으로 끄지 않고 손으로 가볍게 끕니다.</td>
+              </tr>
+              <tr>
+                <td><strong>기독교식</strong></td>
+                <td>분향보다 헌화와 묵념 중심</td>
+                <td>고개를 숙여 묵념하고 조용히 기도 분위기에 참여합니다.</td>
+                <td>절은 하지 않는 경우가 많습니다.</td>
+              </tr>
+              <tr>
+                <td><strong>천주교식</strong></td>
+                <td>성호 후 묵념, 분향 또는 헌화</td>
+                <td>연도나 기도문이 진행되면 조용히 동참합니다.</td>
+                <td>무릎을 꿇고 기도하는 경우가 있습니다.</td>
+              </tr>
+              <tr>
+                <td><strong>일반·유교식</strong></td>
+                <td>분향 후 두 번 절, 상주와 맞절</td>
+                <td>전통 절차에 맞추어 엄숙하게 행동합니다.</td>
+                <td>복장과 절차 모두 가장 보수적으로 준비하면 무난합니다.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="phrases">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>문상 시 위로 인사말</h2>
+            <p>말이 길수록 오히려 부담이 될 수 있습니다. 짧고 진심 어린 한마디가 가장 큰 위로가 됩니다.</p>
+          </div>
+        </div>
+
+        <div class="phrase-wrap">
+          <article class="quote">
+            <div class="label">기본 표현</div>
+            <blockquote>“삼가 고인의 명복을 빕니다.”</blockquote>
+            <p>가장 무난하고 정중한 표현입니다. 어떤 관계에서든 사용하기 좋습니다.</p>
+          </article>
+
+          <article class="quote">
+            <div class="label">담담한 위로</div>
+            <blockquote>“깊은 위로의 말씀을 전합니다.”</blockquote>
+            <p>격식을 갖추면서도 지나치게 감정을 드러내지 않아 부담이 적습니다.</p>
+          </article>
+
+          <article class="quote">
+            <div class="label">가까운 사이</div>
+            <blockquote>“정말 힘드시겠습니다. 마음 깊이 위로드립니다.”</blockquote>
+            <p>가까운 지인이나 친척에게 조금 더 따뜻한 결의 문장으로 전할 수 있습니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>자주 묻는 질문</h2>
+            <p>처음 장례식장을 방문할 때 많이 헷갈리는 질문들을 미리 정리했습니다.</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <article class="faq-item active">
+            <button class="faq-question" type="button">
+              <span>검은 옷이 꼭 아니어도 되나요</span>
+              <span>−</span>
+            </button>
+            <div class="faq-answer">
+              <p>반드시 순수한 검은색일 필요는 없지만, 검정·짙은 회색·남색처럼 차분한 색상을 고르는 것이 좋습니다. 밝은 원색이나 화려한 패턴은 피하는 편이 안전합니다.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              <span>절을 꼭 해야 하나요</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>장례 형식에 따라 다릅니다. 일반적인 전통 장례에서는 절을 하지만, 기독교식 장례에서는 묵념이나 헌화로 대신하는 경우가 많습니다.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              <span>부의금은 언제 전달하나요</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>보통 빈소 입장 전 접수처에 전달합니다. 장례식장 안내에 따라 접수 데스크 또는 지정된 장소에 정중히 건네면 됩니다.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              <span>무슨 말을 해야 할지 모르겠어요</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>길게 말하려고 애쓰기보다 “삼가 고인의 명복을 빕니다”, “깊은 위로의 말씀을 전합니다” 정도면 충분합니다. 진심 어린 표정과 태도가 더 중요합니다.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2>차분하게, 필요한 정보만 담은<br />장례식장 예절 안내</h2>
+            <p>이 페이지는 장례식장 예절 안내를 위한 기본 장례문화에 대한 이해와 조문순서, 복장 등 안내 입니다.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#top">처음으로</a>
+            <a class="btn btn-secondary" href="#faq">FAQ 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-line">
+      <span>© 2026 장례식장 예절 및 조문 순서</span>
+      <span>정중함 · 신뢰감 · 가독성을 중심으로 구성된 예절</span>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-item').forEach((item) => {
+      const button = item.querySelector('.faq-question');
+      button.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach((other) => {
+          other.classList.remove('active');
+          other.querySelector('.faq-question span:last-child').textContent = '+';
+        });
+        if (!isActive) {
+          item.classList.add('active');
+          button.querySelector('span:last-child').textContent = '−';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
